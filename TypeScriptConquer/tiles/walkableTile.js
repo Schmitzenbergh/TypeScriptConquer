@@ -1,4 +1,4 @@
-var walkableTile = /** @class */ (function () {
+var walkableTile = (function () {
     function walkableTile() {
         this.width = 64;
         this.height = 64;
@@ -12,4 +12,3 @@ var walkableTile = /** @class */ (function () {
     };
     return walkableTile;
 }());
-//# sourceMappingURL=walkableTile.js.map
