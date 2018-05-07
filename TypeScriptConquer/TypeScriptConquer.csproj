@@ -83,12 +83,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="factories\randomTileFactory.ts" />
+    <TypeScriptCompile Include="Camera.ts" />
+    <TypeScriptCompile Include="factories\RandomTileFactory.ts" />
     <TypeScriptCompile Include="iTile.ts" />
-    <TypeScriptCompile Include="main.ts" />
-    <TypeScriptCompile Include="tileRenderer.ts" />
-    <TypeScriptCompile Include="tiles\nonWalkableTile.ts" />
-    <TypeScriptCompile Include="tiles\walkableTile.ts" />
+    <TypeScriptCompile Include="Main.ts" />
+    <TypeScriptCompile Include="TileRenderer.ts" />
+    <TypeScriptCompile Include="tiles\NonWalkableTile.ts" />
+    <TypeScriptCompile Include="tiles\WalkableTile.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

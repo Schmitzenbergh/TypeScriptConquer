@@ -1,4 +1,4 @@
-﻿class randomTileFactory {
+﻿class RandomTileFactory {
     /*
      * Generates a random tilemap according to the given width and hight
      */
@@ -13,7 +13,7 @@
                         returnMap[x][y] = new walkableTile();
                         break;
                     case 2:
-                        returnMap[x][y] = new nonWalkableTile();
+                        returnMap[x][y] = new NonWalkableTile();
                         break;
                 }
             }

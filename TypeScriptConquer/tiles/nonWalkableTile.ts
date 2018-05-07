@@ -1,7 +1,7 @@
 ﻿/*
  * A Simple non-walkable tile (WIP)
  */ 
-class nonWalkableTile implements iTile {
+class NonWalkableTile implements iTile {
     width: number = 64;
     height: number = 64;
     color: string = "red";
