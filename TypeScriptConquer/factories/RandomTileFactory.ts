@@ -2,7 +2,7 @@
     /*
      * Generates a random tilemap according to the given width and hight
      */
-    static generateRandomTileMap(height: number, width: number) {
+    static generateRandomTileMap(height: number, width: number): Array<Array<iTile>> {
         var returnMap = new Array(height);
 
         for (var x = 0; x < height; x++) {

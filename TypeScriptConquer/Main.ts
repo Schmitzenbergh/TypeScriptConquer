@@ -1,4 +1,4 @@
-﻿var canvas: HTMLCanvasElement;
+﻿/*var canvas: HTMLCanvasElement;
 var ctx: CanvasRenderingContext2D;
 var renderer: TileRenderer;
 
@@ -11,8 +11,11 @@ var tileMap = RandomTileFactory.generateRandomTileMap(100, 100);
 var cam: Camera = new Camera(0, 0, 1280, 720);
 cam.cameraSpeed = 20;
 
+
 //Startup
 window.onload = () => {
+
+
     canvas = <HTMLCanvasElement>document.getElementById('cnvs');
     canvas.width = cam.cameraW; //Set the Camera + canvas
     canvas.height = cam.cameraH; //Set the Camera + canvas
@@ -54,4 +57,4 @@ document.onkeyup = (event) => {
     keys[event.keyCode] = false;
 }
 //--------End of keyrecording
-
+*/

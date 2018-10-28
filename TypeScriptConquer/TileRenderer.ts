@@ -15,25 +15,25 @@ class TileRenderer {
      * Render all tiles from a given 2D array of iTile objects
      * Will render bitmap based tiles when src is specified of a tile.
      */ 
-    renderTiles(tileArray: Array<Array<iTile>>) {
-        for (var x = Math.floor(cam.cameraX / 64); x < tileArray.length; x++) {
-            for (var y = Math.floor(cam.cameraY / 64); y < tileArray[x].length; y++) {
-                var currTile = tileArray[x][y];
-                if (x * currTile.height < cam.cameraX + cam.cameraW && y * currTile.width < cam.cameraY + cam.cameraH) {
+    renderTiles(tileArray: Array<Array<iTile>>, cameraX: number, cameraY: number) {
+        for (let x = Math.floor(cameraX / 64); x < tileArray.length; x++) {
+            for (let y = Math.floor(cameraY / 64); y < tileArray[x].length; y++) {
+                let currTile = tileArray[x][y];
+                if (x * currTile.height < cameraX + 1280 && y * currTile.width < cameraY + 720) {
                     if (currTile.src != "") {
                     //Do not render tiles outside the canvas/camera
                     
-                        var img = new Image();
+                        let img = new Image();
                         img.src = currTile.src;
-                        ctx.drawImage(img, (x * currTile.width) - cam.cameraX, (y * currTile.height) - cam.cameraY, currTile.width, currTile.height);
+                        this.ctx.drawImage(img, (x * currTile.width) - cameraX, (y * currTile.height) - cameraY, currTile.width, currTile.height);
                         //Dont render images outside camera
                         //Check the camerawith
                     } else {
-                        ctx.beginPath();
-                        ctx.lineWidth = 2;
-                        ctx.strokeStyle = currTile.color;
-                        ctx.rect((x * currTile.width) - cam.cameraX, (y * currTile.height) - cam.cameraY, currTile.width, currTile.height);
-                        ctx.stroke();
+                        this.ctx.beginPath();
+                        this.ctx.lineWidth = 2;
+                        this.ctx.strokeStyle = currTile.color;
+                        this.ctx.rect((x * currTile.width) - cameraX, (y * currTile.height) - cameraY, currTile.width, currTile.height);
+                        this.ctx.stroke();
                     }
                 }
 

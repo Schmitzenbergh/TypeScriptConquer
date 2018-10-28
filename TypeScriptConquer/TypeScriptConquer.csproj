@@ -83,8 +83,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App.ts" />
     <TypeScriptCompile Include="Camera.ts" />
     <TypeScriptCompile Include="factories\RandomTileFactory.ts" />
+    <TypeScriptCompile Include="Game.ts" />
     <TypeScriptCompile Include="iTile.ts" />
     <TypeScriptCompile Include="Main.ts" />
     <TypeScriptCompile Include="TileRenderer.ts" />
